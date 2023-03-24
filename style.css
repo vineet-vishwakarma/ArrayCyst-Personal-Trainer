@@ -70,11 +70,10 @@ ul{
     font-size: 22px;
 }
 
-i{
+/* i{
     font-size: 100px;
-    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
+} */
 
 /* -----------Utility Class------------ */
 
