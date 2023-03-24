@@ -1,0 +1,56 @@
+/* ---------------- Large-Screen ---------------------- */
+
+@media screen and (max-width:991px){
+    h1{
+        font-size: 2.5rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .main-nav{
+        overflow: initial;
+    }
+
+    .nav-link{
+        position: absolute;
+        background-color: var(--bg-color-light);
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 40px;
+        transition: 0.2s ease-in-out;
+        backdrop-filter: blur(8px);
+    }
+
+    .nav-link.active{
+        left: 0;
+    }
+
+    .nav-link ul{
+        flex-direction: column;
+    }
+
+    .header-left h1{
+        font-size: 60px;
+    }
+    
+    .header-left h2{
+        letter-spacing: 2px;
+        font-size: 30px;
+    }
+    
+}
+
+
+/* ---------------- Medium-Screen ---------------------- */
+
+@media screen and (max-width: 767px){
+    
+}
