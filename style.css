@@ -115,9 +115,14 @@ i{
 
 /* ----------Navigation Bar------------ */
 
+nav{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 .main-nav{
     justify-content: space-between;
-    background-color: #1a1a1d;
+    /* background-color: #000; */
+    position: relative;
 }
 
 .logo{
@@ -144,6 +149,90 @@ i{
 
 .nav-link ul{
     justify-content: center;
+    text-align: center;
     gap: 40px;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+/* -------- Search-Bar --------- */
+
+.sb-container{
+    padding: var(--padding-inline-section);
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar{
+    background: transparent;
+    width: 100%;
+    max-width: 700px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 60px;
+    padding: 5px 10px;
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    outline: none;
+    border: 0;
+    font-size: 20px;
+    padding: 5px 10px;
+    color: #f1f1f1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: var(--primary-color);
+    cursor: pointer;
+    color: #f1f1f1;
+}
+
+::placeholder{
+    color: rgba(241, 241, 241,0.5);
+    font-size: 20px;
+}
+
+/* ------------- Header-Section -------------- */
+
+header{
+    padding: 50px var(--padding-inline-section) 0px;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-left{
+    max-width: 40vw;
+}
+
+.header-left h1{
+    font-family: 'Exo 2', sans-serif;
+}
+
+.header-left h2{
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 10px;
+}
+
+.header-left span{
+    color: #ff004f;
+}
+.header-left p{
+    padding-block: 50px;
+}
+.header-right img{
+    width: 100%;
 }
 
