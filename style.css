@@ -18,6 +18,7 @@ html{
     --accent-color: #6F2232;
     --accent-color-dark: #4E4E50;
     --bg-color: #1A1A1D;
+    --bg-color-light: #rgba(0, 0, 0, 0.1);
     --padding-inline-section: 20px;
 }
 
@@ -235,4 +236,3 @@ header{
 .header-right img{
     width: 100%;
 }
-
