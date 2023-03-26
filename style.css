@@ -114,6 +114,23 @@ ul{
     color: var(--primary-color);
 }
 
+.secondary-btn{
+    background: none;
+    margin: 30px 0; 
+    padding: 12px 24px;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-weight: 500; */
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    color: #f1f1f1;
+    box-shadow: 0px 0px 2px var(--accent-color);
+    transition: background 0.2s;
+}
+
+.secondary-btn:hover{
+    background: var(--primary-color);
+}
+
 /* ----------Navigation Bar------------ */
 
 nav{
@@ -235,4 +252,131 @@ header{
 }
 .header-right img{
     width: 100%;
+}
+
+/* --------------------- Popular Courses-Section ------------------------- */
+
+.courses{
+    padding: 80px var(--padding-inline-section) 0;
+}
+
+.courses-header{
+    font-family: 'Exo 2', sans-serif;
+    margin-bottom: 40px;
+}
+
+.courses-header h2 i{
+    color: var(--primary-color);
+}
+
+.courses-card img{
+    max-width: 80%;
+    margin-block: 20px;
+}
+
+.courses-card{
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    max-width: 30%;
+}
+
+.courses-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.courses-card div{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s, transform 0.5s;
+}
+
+.courses-card div:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 1px 5px var(--primary-color);
+}
+
+.courses-card div:hover .secondary-btn i{
+    animation: blink 1s infinite linear;
+}
+
+@keyframes blink {
+    100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100%;
+    }
+}
+
+/* ------------------- Trainer Section ------------------------ */
+
+.trainer{
+    padding: 80px var(--padding-inline-section) 0;
+}
+
+.trainer-header{
+    font-family: 'Exo 2', sans-serif;
+    margin-bottom: 40px;
+}
+
+.trainer-header h2 i{
+    color: var(--primary-color);
+}
+
+.trainer-area{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.trainer-card img{
+    position: absolute;
+    width: 262px;
+    height: 315px;
+}
+
+.trainer-card{
+    position: relative;
+    width: 23%;
+    min-height: 300px;
+    background: #000;
+    border-radius: 6px;
+    /* background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.8)), url(https://pyxis.nymag.com/v1/imgs/a85/912/a5ef47190c966169cf6e9c6da815b0f0ad-07-john-wick-2-2.rsquare.w700.jpg); */
+    background-size: cover;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.trainer-card:hover{
+    transform: translateY(-10px);
+}
+
+.trainer-text{
+    position: absolute;
+    text-align: center;
+    color: #f1f1f1;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.8);
+    bottom: 20px;
+    /* left: 20px; */
+    /* right: 20px; */
+}
+
+.trainer-text i{
+    color: goldenrod;
+}
+
+.trainer-text,h2,h5{
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.8);
+} 
+
+.center-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
