@@ -291,12 +291,15 @@ header{
 .courses-card div{
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: all 0.5s, transform 0.5s;
+    transition: all 0.5s, all 0.5s;
+    border: 2px solid #000;
 }
 
 .courses-card div:hover{
     transform: translateY(-20px);
-    box-shadow: 0 1px 5px var(--primary-color);
+    box-shadow: inset 0 0 10px var(--primary-color), 0 0 30px rgb(0, 0, 0 );
+    /* box-shadow: inset 0 0 10px whitesmoke; */
+    border: 1px solid #ff004f;
 }
 
 .courses-card div:hover .secondary-btn i{
@@ -379,4 +382,151 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* ------------------- Testinomial Section ------------------------ */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background: #000;
+    padding: 25px;
+    border-radius: 3px;
+}
+
+.box i.quote{
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.box .content-name{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.box .info .name{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.box .info .job{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.box .info .stars{
+    margin-top: 2px;
+}
+  
+.box .info .stars i{
+    color: goldenrod;
+}
+  
+.box .content-name .image{
+    height: 75px;
+    width: 75px;
+    padding: 3px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+  
+.content-name .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.box:hover .content-name .image img{
+    border: 2px solid ;
+    border-color: #fff;
+}
+
+
+/* ---------------- FAQ Section ------------------ */
+
+.faq-header{
+    padding: 60px 20px 0;
+}
+
+.faq-header h2 i{
+    color: var(--primary-color);
+}
+
+.faq-area{
+    padding-block: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.faq-card{
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    max-width: 48%;
+}
+
+.collapsible {
+    border-radius: 15px;
+    background-color: #000;
+    font-weight: 999;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    box-shadow: 1px 1px 1px #4E4E50, -0.5px -0.5px 1px #f1f1f1;
+}
+  
+.active, .collapsible:hover {
+    background-color: var(--bg-color);
+}
+  
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2212";
+}
+  
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: max-height 0.2s ease-out;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8));
+}
+
+.content p{
+    padding: 30px 10px;
+    font-size: 16px;
 }
