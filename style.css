@@ -134,7 +134,10 @@ ul{
 /* ----------Navigation Bar------------ */
 
 nav{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    z-index: 999;
+    top: 0;
 }
 
 .main-nav{
@@ -529,4 +532,130 @@ header{
 .content p{
     padding: 30px 10px;
     font-size: 16px;
+}
+
+/* ---------------- Join Us On --------------- */
+
+.join-header i{
+    color: var(--primary-color);
+}
+
+.join-header{
+    padding-block: 50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.join-icons{
+    text-align: center;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 75px;
+}
+
+.hr-left{
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    background: linear-gradient(to left,var(--primary-color),rgba(255,0,79,0));
+    left: 18%;
+    top: 50%;
+}
+
+.hr-right{
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    background: linear-gradient(to right,var(--primary-color),rgba(255,0,79,0));
+    right: 18%;
+    top: 50%;
+}
+
+.join-icons a i{
+    font-size: 75px;
+    color: var(--primary-color);
+    text-shadow: 1px 1px 1px #f1f1f1;
+    transition: all 0.5s;
+}
+
+.join-icons a i:hover{
+    transform: translateY(-10px);
+    background: -moz-linear-gradient(top, var(--primary-color) 50%, var(--accent-color) 100%);
+    background: -webkit-linear-gradient(top, var(--primary-color) 50%, var(--accent-color) 100%);
+    background: linear-gradient(to bottom, var(--primary-color) 50%, var(--accent-color) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+}
+
+/* ---------- Contact Section ----------- */
+
+.contact{
+    padding: 80px var(--padding-inline-section) 0;
+}
+
+.contact-header{
+    font-family: 'Exo 2', sans-serif;
+    margin-bottom: 40px;
+}
+
+.contact-header i{
+    color: #ff004f;
+}
+
+.contact-left{
+    flex-basis: 35%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact-left p{
+    margin-bottom: 20px;
+}
+
+.contact-left i{
+    color: var(--primary-color);
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-right form{
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form .primary-btn{
+    margin: 0;
+    cursor: pointer;
+}
+
+form input,form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #f1f1f1;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.copyright{
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.copyright span{
+    font-size: 21px;
 }
