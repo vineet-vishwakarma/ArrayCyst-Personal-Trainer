@@ -504,7 +504,7 @@ header{
     box-shadow: 1px 1px 1px #4E4E50, -0.5px -0.5px 1px #f1f1f1;
 }
   
-.active, .collapsible:hover {
+.active-faq, .collapsible:hover {
     background-color: var(--bg-color);
 }
   
@@ -516,7 +516,7 @@ header{
     margin-left: 5px;
 }
   
-.active:after {
+.active-faq:after {
     content: "\2212";
 }
   
