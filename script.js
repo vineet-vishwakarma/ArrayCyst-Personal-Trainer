@@ -7,6 +7,31 @@ toggleButton.addEventListener('click', () => {
     navLink.classList.toggle('active')
 })
 
+// Login Form
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+  document.getElementById("mySignUp").style.display = "none";
+  document.getElementById("form-underlay").style.visibility = "visible";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+  document.getElementById("form-underlay").style.visibility = "hidden";
+}
+
+function openSignup() {
+  document.getElementById("mySignUp").style.display = "block";
+  document.getElementById("myForm").style.display = "none";
+  document.getElementById("form-underlay").style.visibility = "visible";
+}
+
+function closemySignUp() {
+  document.getElementById("mySignUp").style.display = "none";
+  document.getElementById("myForm").style.display = "none";
+  document.getElementById("form-underlay").style.visibility = "hidden";
+}
+
 // Testinomial 
 
 var swiper = new Swiper(".mySwiper", {
